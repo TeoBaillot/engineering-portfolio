@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Colored Crayons';
+    src: url("ColoredCrayons.woff") format("woff");
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr/ 1fr 40%;
+    height: 100vh;
+    margin: 0;
+    background-image: url("background.png");
+    background-size: 100%;
+    color: white;
+    font-family: "Colored Crayons";
+}
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+aside {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#pendu {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+#boutonJouer {
+    display: grid;
+    grid-column: 1/3;
+    justify-content: center;
+    align-content: center;
+}
+
+#JOUER {
+    margin: 0 auto;
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Colored Crayons";
+    color: black;
+    border-radius: 8px;
+}
+
+#JOUER:hover {
+    background-color: rgb(105, 105, 105);
+    border-color: rgb(80, 80, 80);
+}
+
+#choixDifficulte1 {
+    display: grid;
+    grid-column: 1/3;
+    justify-content: center;
+    align-content: center;
+}
+
+#choixDifficulte2 {
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Colored Crayons";
+    color: black;
+    border-radius: 6px;
+}
+
+#zoneTexte {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+}
+
+#inputTexte {
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    font-family: "Colored Crayons";
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#TESTER {
+    padding-left: 5px;
+    text-align: center;
+    font-size: 12.5px;
+    font-family: "Colored Crayons";
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#TESTER:hover {
+    background-color: rgb(105, 105, 105);
+    border-color: rgb(80, 80, 80);
+}
+
+#essaisRestants {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: "Colored Crayons";
+}
+
+#texteEssaisRestants {
+    font-family: "Colored Crayons";
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#erreur {
+    font-size: 20px;
+    font-family: "Colored Crayons";
+}
+
+#texteNombreErreurs {
+    font-family: "Colored Crayons";
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#lettres {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: "Colored Crayons";
+    padding: 5px;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#lettres > div {
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-spacing: 5px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#lettres > div.mauvaiseLettre {
+    background-color: darkred;
+}
+
+#lettres > div.bonneLettre {
+    background-color: darkgreen;
+}
+
+#mot {
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: "Colored Crayons";
+    text-align: center;
+}
+
+.notDisplayed {
+    display: none;
+}
+
+#perdu:not(.notDisplayed) {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #000000AA;
+    text-align: center;
+    font-family: "Colored Crayons";
+    font-size: 300%;
+}
+
+#gagne:not(.notDisplayed) {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    background-color: #000000AA;
+    font-family: "Colored Crayons";
+    font-size: 300%;
+}
+
+#REJOUER {
+    font-family: "Colored Crayons";
+    font-size: 30px;
+}
+
+#REJOUER:hover {
+    background-color: rgb(105, 105, 105);
+    border-color: rgb(80, 80, 80);
+}
+
+#REJOUER1 {
+    font-family: "Colored Crayons";
+    font-size: 30px;
+}
+
+#REJOUER1:hover {
+    background-color: rgb(105, 105, 105);
+    border-color: rgb(80, 80, 80);
+}
+
+
+#choixDifficulte4 {
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Colored Crayons";
+    color: black;
+    border-radius: 6px;
+}
+
+#choixDifficulte6 {
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Colored Crayons";
+    color: black;
+    border-radius: 6px;
+}
+
+#chargement:not(.notDisplayed) {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    font-size: 40px;
+}
+
+#chargement > p {
+    text-align: center;
+}
+

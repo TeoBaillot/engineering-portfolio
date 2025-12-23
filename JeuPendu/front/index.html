@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Le pendu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Jeu du pendu</h1>
+</header>
+<main class="notDisplayed">
+    <div id="jeu" class="notDisplayed">
+        <label id="zoneTexte">
+            <input type="text" placeholder="Entrez une lettre" maxlength="1" id="inputTexte"/>
+            <button id="TESTER">TESTER</button>
+        </label>
+        <div id="mot">
+        </div>
+        <div id="lettres">
+            <template id="lettre-template">
+                <div>
+                    <span></span>
+                </div>
+            </template>
+        </div>
+    </div>
+</main>
+<aside class="notDisplayed">
+    <svg height="100%" width="100%" viewBox="0 0 200 250" id="pendu">
+        <!-- truc en bois -->
+        <line x1="10" y1="230" x2="90" y2="230"/>
+        <line x1="50" y1="20" x2="50" y2="230"/>
+        <line x1="50" y1="20" x2="130" y2="20"/>
+        <line x1="50" y1="60" y2="20" x2="90"></line>
+        <line x1="130" y1="20" x2="130" y2="50"/>
+        <!-- Tete -->
+        <circle cx="130" cy="70" r="18" class="bonhomme notDisplayed"/>
+        <!-- Corps -->
+        <line x1="130" y1="90" x2="130" y2="140" class="bonhomme notDisplayed"/>
+        <!-- Bras -->
+        <line x1="130" y1="115" x2="110" y2="115" class="bonhomme notDisplayed"/>
+        <line x1="130" y1="115" x2="150" y2="115" class="bonhomme notDisplayed"/>
+        <!-- Jambes -->
+        <line x1="130" y1="140" x2="115" y2="170" class="bonhomme notDisplayed"/>
+        <line x1="130" y1="140" x2="145" y2="170" class="bonhomme notDisplayed"/>
+    </svg>
+    <div id="texteEssaisRestants">Nombres d'essais restants: <span id="essaisRestants"></span></div>
+    <div id="texteNombreErreurs">Nombres d'erreurs: <span id="erreur"></span></div>
+</aside>
+<div id="boutonJouer">
+    <button id="JOUER">JOUER</button>
+    <div id="choixDifficulte1">
+        <select id="choixDifficulte2">
+            <option value="facile">Facile</option>
+            <option value="moyen">Moyen</option>
+            <option value="difficile">Difficile</option>
+        </select>
+    </div>
+</div>
+
+<div id="perdu" class="notDisplayed">
+    <p>Vous avez perdu</p>
+    <button id="REJOUER1">REJOUER</button>
+    <div id="choixDifficulte3">
+        <select id="choixDifficulte4">
+            <option value="facile">Facile</option>
+            <option value="moyen">Moyen</option>
+            <option value="difficile">Difficile</option>
+        </select>
+    </div>
+</div>
+<div id="gagne" class="notDisplayed">
+    <p>Victoire</p>
+    <button id="REJOUER">REJOUER</button>
+    <div id="choixDifficulte5">
+        <select id="choixDifficulte6">
+            <option value="facile">Facile</option>
+            <option value="moyen">Moyen</option>
+            <option value="difficile">Difficile</option>
+        </select>
+    </div>
+</div>
+<div id="chargement" class="notDisplayed">
+    <p>Chargement</p>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
