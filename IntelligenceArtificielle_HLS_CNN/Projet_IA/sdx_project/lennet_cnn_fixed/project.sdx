@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="lennet_cnn_fixed" location="/home/se5-g1/Documents/PROJET_AI_ABD_BAILLOT/sdx_project/lennet_cnn_fixed" platform="/opt/Xilinx/SDx/2018.2/platforms/zed/zed.xpfm" platformUID="xilinx.com:zed:zed:1.0" systemProject="lennet_cnn_fixed_system" sysConfig="linux" runtime="C/C++" cpu="linux" cpuInstance="" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.330734528" dirty="true">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.1453480168">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="3" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="Conv1_28x28x1_5x5x20_1_0" filepath="src/lenet_cnn_method_def.c" clkid="2" location="/home/se5-g1/Documents/PROJET_AI_ABD_BAILLOT/sdx_project/lennet_cnn_fixed/src/lenet_cnn_method_def.c"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="3" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="Conv1_28x28x1_5x5x20_1_0" filepath="src/lenet_cnn_method_def.c" clkid="2" location="/home/se5-g1/Documents/PROJET_AI_ABD_BAILLOT/sdx_project/lennet_cnn_fixed/src/lenet_cnn_method_def.c"/>
+    </lastBuildOptions>
+  </configuration>
+</sdsproject:SDSProject>
