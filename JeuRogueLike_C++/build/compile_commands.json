@@ -1,0 +1,92 @@
+[
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\main.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\main.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/main.cpp",
+  "output": "CMakeFiles/jeu.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Personnage.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Personnage.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Personnage.cpp",
+  "output": "CMakeFiles/jeu.dir/Personnage.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\ClassePersonnage.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\ClassePersonnage.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/ClassePersonnage.cpp",
+  "output": "CMakeFiles/jeu.dir/ClassePersonnage.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Potion.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Potion.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Potion.cpp",
+  "output": "CMakeFiles/jeu.dir/Potion.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\PotionDAttaque.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\PotionDAttaque.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/PotionDAttaque.cpp",
+  "output": "CMakeFiles/jeu.dir/PotionDAttaque.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\PotionDeVie.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\PotionDeVie.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/PotionDeVie.cpp",
+  "output": "CMakeFiles/jeu.dir/PotionDeVie.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Inventaire.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Inventaire.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Inventaire.cpp",
+  "output": "CMakeFiles/jeu.dir/Inventaire.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Ennemi.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Ennemi.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Ennemi.cpp",
+  "output": "CMakeFiles/jeu.dir/Ennemi.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Equipement.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Equipement.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Equipement.cpp",
+  "output": "CMakeFiles/jeu.dir/Equipement.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Arme.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Arme.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Arme.cpp",
+  "output": "CMakeFiles/jeu.dir/Arme.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Armure.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Armure.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Armure.cpp",
+  "output": "CMakeFiles/jeu.dir/Armure.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Casque.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Casque.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Casque.cpp",
+  "output": "CMakeFiles/jeu.dir/Casque.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Guerrier.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Guerrier.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Guerrier.cpp",
+  "output": "CMakeFiles/jeu.dir/Guerrier.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Archer.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Archer.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Archer.cpp",
+  "output": "CMakeFiles/jeu.dir/Archer.cpp.obj"
+},
+{
+  "directory": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\jeu.dir\\Magicien.cpp.obj -c C:\\Users\\MatisJAQUET\\Ecole\\programmation\\HeroFight\\V20\\Magicien.cpp",
+  "file": "C:/Users/MatisJAQUET/Ecole/programmation/HeroFight/V20/Magicien.cpp",
+  "output": "CMakeFiles/jeu.dir/Magicien.cpp.obj"
+}
+]

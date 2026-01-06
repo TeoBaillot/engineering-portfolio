@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/jeu.dir/Archer.cpp.obj"
+  "CMakeFiles/jeu.dir/Archer.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Arme.cpp.obj"
+  "CMakeFiles/jeu.dir/Arme.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Armure.cpp.obj"
+  "CMakeFiles/jeu.dir/Armure.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Casque.cpp.obj"
+  "CMakeFiles/jeu.dir/Casque.cpp.obj.d"
+  "CMakeFiles/jeu.dir/ClassePersonnage.cpp.obj"
+  "CMakeFiles/jeu.dir/ClassePersonnage.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Ennemi.cpp.obj"
+  "CMakeFiles/jeu.dir/Ennemi.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Equipement.cpp.obj"
+  "CMakeFiles/jeu.dir/Equipement.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Guerrier.cpp.obj"
+  "CMakeFiles/jeu.dir/Guerrier.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Inventaire.cpp.obj"
+  "CMakeFiles/jeu.dir/Inventaire.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Magicien.cpp.obj"
+  "CMakeFiles/jeu.dir/Magicien.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Personnage.cpp.obj"
+  "CMakeFiles/jeu.dir/Personnage.cpp.obj.d"
+  "CMakeFiles/jeu.dir/Potion.cpp.obj"
+  "CMakeFiles/jeu.dir/Potion.cpp.obj.d"
+  "CMakeFiles/jeu.dir/PotionDAttaque.cpp.obj"
+  "CMakeFiles/jeu.dir/PotionDAttaque.cpp.obj.d"
+  "CMakeFiles/jeu.dir/PotionDeVie.cpp.obj"
+  "CMakeFiles/jeu.dir/PotionDeVie.cpp.obj.d"
+  "CMakeFiles/jeu.dir/main.cpp.obj"
+  "CMakeFiles/jeu.dir/main.cpp.obj.d"
+  "jeu.exe"
+  "jeu.exe.manifest"
+  "jeu.pdb"
+  "libjeu.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/jeu.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
