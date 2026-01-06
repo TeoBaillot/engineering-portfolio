@@ -1,0 +1,238 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'se5-g1' on host 'PCII-REF' (Linux_x86_64 version 6.8.0-88-generic) on Wed Dec 17 13:14:51 CET 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/se5-g1/Documents/PROJET_AI_ABD_BAILLOT'
+INFO: [HLS 200-10] Opening project '/home/se5-g1/Documents/PROJET_AI_ABD_BAILLOT/lenet_cnn_zedboard'.
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/fixed_point.c' to the project
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/fixed_point.h' to the project
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/lenet_cnn_float.c' to the project
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/lenet_cnn_float.h' to the project
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/lenet_cnn_method_def.c' to the project
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/utils.c' to the project
+INFO: [HLS 200-10] Adding design file 'FIXED_POINT/weight_tables.h' to the project
+INFO: [HLS 200-10] Opening solution '/home/se5-g1/Documents/PROJET_AI_ABD_BAILLOT/lenet_cnn_zedboard/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [HLS 200-10] Analyzing design file 'FIXED_POINT/utils.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'FIXED_POINT/lenet_cnn_method_def.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'FIXED_POINT/lenet_cnn_float.c' ... 
+WARNING: [HLS 200-40] In file included from FIXED_POINT/lenet_cnn_float.c:1:
+FIXED_POINT/lenet_cnn_float.c:136:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main() {
+^
+1 warning generated.\n
+INFO: [HLS 200-10] Analyzing design file 'FIXED_POINT/fixed_point.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 345.035 ; gain = 0.000 ; free physical = 24271 ; free virtual = 29614
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 345.035 ; gain = 0.000 ; free physical = 24271 ; free virtual = 29614
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 472.699 ; gain = 127.664 ; free physical = 24296 ; free virtual = 29646
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Conv1_28x28x1_5x5x20_1_0' (FIXED_POINT/lenet_cnn_method_def.c:24) automatically.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Conv2_12x12x20_5x5x40_1_0' (FIXED_POINT/lenet_cnn_method_def.c:75) automatically.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Fc1_40_400' (FIXED_POINT/lenet_cnn_method_def.c:123) automatically.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Fc2_400_10' (FIXED_POINT/lenet_cnn_method_def.c:140) automatically.
+INFO: [XFORM 203-602] Inlining function 'Fc2_400_10' into 'lenet_cnn' (FIXED_POINT/lenet_cnn_float.c:101) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 472.699 ; gain = 127.664 ; free physical = 24311 ; free virtual = 29662
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (FIXED_POINT/lenet_cnn_method_def.c:118) in function 'Fc1_40_400' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:71) in function 'Conv2_12x12x20_5x5x40_1_0' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:17) in function 'Conv1_28x28x1_5x5x20_1_0' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:120) in function 'Fc1_40_400' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:122) in function 'Fc1_40_400' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:73) in function 'Conv2_12x12x20_5x5x40_1_0' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:74) in function 'Conv2_12x12x20_5x5x40_1_0' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:21) in function 'Conv1_28x28x1_5x5x20_1_0' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:23) in function 'Conv1_28x28x1_5x5x20_1_0' completely.
+INFO: [XFORM 203-102] Automatically partitioning small array 'tab' (FIXED_POINT/lenet_cnn_method_def.c:93) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'tab' (FIXED_POINT/lenet_cnn_method_def.c:41) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'pool1_output' (FIXED_POINT/lenet_cnn_float.c:45) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tab' (FIXED_POINT/lenet_cnn_method_def.c:93) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tab' (FIXED_POINT/lenet_cnn_method_def.c:41) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Conv1_28x28x1_5x5x20_1_0' (FIXED_POINT/lenet_cnn_method_def.c:24) automatically.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Conv2_12x12x20_5x5x40_1_0' (FIXED_POINT/lenet_cnn_method_def.c:75) automatically.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Fc1_40_400' (FIXED_POINT/lenet_cnn_method_def.c:123) automatically.
+INFO: [XFORM 203-602] Inlining function 'fixed_mul' into 'Fc2_400_10' (FIXED_POINT/lenet_cnn_method_def.c:140) automatically.
+INFO: [XFORM 203-602] Inlining function 'Fc2_400_10' into 'lenet_cnn' (FIXED_POINT/lenet_cnn_float.c:101) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Fc1_40_400' (FIXED_POINT/lenet_cnn_method_def.c:104)...16 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv2_12x12x20_5x5x40_1_0' (FIXED_POINT/lenet_cnn_method_def.c:53)...25 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv1_28x28x1_5x5x20_1_0' (FIXED_POINT/lenet_cnn_method_def.c:4)...49 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 472.699 ; gain = 127.664 ; free physical = 24314 ; free virtual = 29683
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (FIXED_POINT/lenet_cnn_method_def.c:114:21) in function 'Fc1_40_400' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (FIXED_POINT/lenet_cnn_method_def.c:67:29) in function 'Conv2_12x12x20_5x5x40_1_0'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (FIXED_POINT/lenet_cnn_method_def.c:66:25) in function 'Conv2_12x12x20_5x5x40_1_0'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (FIXED_POINT/lenet_cnn_method_def.c:65:29) in function 'Conv2_12x12x20_5x5x40_1_0'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (FIXED_POINT/lenet_cnn_method_def.c:15:25) in function 'Conv1_28x28x1_5x5x20_1_0'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (FIXED_POINT/lenet_cnn_method_def.c:13:32) in function 'Conv1_28x28x1_5x5x20_1_0'.
+WARNING: [XFORM 203-631] Renaming function 'Pool2_8x8x40_2x2x40_2_0' to 'Pool2_8x8x40_2x2x40_' (FIXED_POINT/lenet_cnn_method_def.c:90:21)
+WARNING: [XFORM 203-631] Renaming function 'Pool1_24x24x20_2x2x20_2_0' to 'Pool1_24x24x20_2x2x2' (FIXED_POINT/lenet_cnn_method_def.c:37:78)
+WARNING: [XFORM 203-631] Renaming function 'Conv2_12x12x20_5x5x40_1_0' to 'Conv2_12x12x20_5x5x4' (FIXED_POINT/lenet_cnn_method_def.c:45:17)
+WARNING: [XFORM 203-631] Renaming function 'Conv1_28x28x1_5x5x20_1_0' to 'Conv1_28x28x1_5x5x20' (FIXED_POINT/lenet_cnn_method_def.c:13:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 535.035 ; gain = 190.000 ; free physical = 24285 ; free virtual = 29638
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'lenet_cnn' ...
+WARNING: [SYN 201-103] Legalizing function name 'Pool2_8x8x40_2x2x40_' to 'Pool2_8x8x40_2x2x40_s'.
+WARNING: [SYN 201-107] Renaming port name 'lenet_cnn/input' to 'lenet_cnn/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'lenet_cnn/output' to 'lenet_cnn/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv1_28x28x1_5x5x20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a', FIXED_POINT/lenet_cnn_method_def.c:24) on array 'input_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 13, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 44.08 seconds; current allocated memory: 182.068 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 183.822 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Pool1_24x24x20_2x2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 184.610 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 185.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv2_12x12x20_5x5x4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('input_0_load_2', FIXED_POINT/lenet_cnn_method_def.c:81) on array 'input_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 13, Depth = 21.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.62 seconds; current allocated memory: 189.366 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.84 seconds; current allocated memory: 194.788 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Pool2_8x8x40_2x2x40_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 195.305 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 195.575 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Fc1_40_400' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a', FIXED_POINT/lenet_cnn_method_def.c:123) on array 'input_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 196.340 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 197.242 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lenet_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 197.558 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 198.244 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv1_28x28x1_5x5x20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv1_28x28x1_5x5x20'.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 201.536 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Pool1_24x24x20_2x2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Pool1_24x24x20_2x2x2'.
+INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 209.557 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv2_12x12x20_5x5x4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_mux_205_32_1_1' to 'lenet_cnn_mux_205bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_mul_mul_6ns_11ns_16_1_1' to 'lenet_cnn_mul_mulcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'lenet_cnn_mul_mulcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lenet_cnn_mux_205bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv2_12x12x20_5x5x4'.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 216.202 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Pool2_8x8x40_2x2x40_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Pool2_8x8x40_2x2x40_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 236.144 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Fc1_40_400' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Fc1_40_400'.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 238.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lenet_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/conv1_kernel' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/conv1_bias' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/conv2_kernel' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/conv2_bias' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/fc1_kernel' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/fc1_bias' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/fc2_kernel' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/fc2_bias' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lenet_cnn/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'lenet_cnn' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_conv1_output' to 'lenet_cnn_conv1_odEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_0' to 'lenet_cnn_pool1_oeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_1' to 'lenet_cnn_pool1_ofYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_2' to 'lenet_cnn_pool1_og8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_3' to 'lenet_cnn_pool1_ohbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_4' to 'lenet_cnn_pool1_oibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_5' to 'lenet_cnn_pool1_ojbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_6' to 'lenet_cnn_pool1_okbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_7' to 'lenet_cnn_pool1_olbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_8' to 'lenet_cnn_pool1_omb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_9' to 'lenet_cnn_pool1_oncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_10' to 'lenet_cnn_pool1_oocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_11' to 'lenet_cnn_pool1_opcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_12' to 'lenet_cnn_pool1_oqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_13' to 'lenet_cnn_pool1_orcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_14' to 'lenet_cnn_pool1_osc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_15' to 'lenet_cnn_pool1_otde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_16' to 'lenet_cnn_pool1_oudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_17' to 'lenet_cnn_pool1_ovdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_18' to 'lenet_cnn_pool1_owdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool1_output_19' to 'lenet_cnn_pool1_oxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_conv2_output' to 'lenet_cnn_conv2_oyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_pool2_output' to 'lenet_cnn_pool2_ozec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lenet_cnn_fc1_output' to 'lenet_cnn_fc1_outAem' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lenet_cnn'.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 244.305 MB.
+INFO: [RTMG 210-278] Implementing memory 'lenet_cnn_conv1_odEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'lenet_cnn_pool1_oeOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'lenet_cnn_conv2_oyd2_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'lenet_cnn_pool2_ozec_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'lenet_cnn_fc1_outAem_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 663.035 ; gain = 318.000 ; free physical = 24130 ; free virtual = 29530
+INFO: [SYSC 207-301] Generating SystemC RTL for lenet_cnn.
+INFO: [VHDL 208-304] Generating VHDL RTL for lenet_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for lenet_cnn.
+INFO: [HLS 200-112] Total elapsed time: 53.58 seconds; peak allocated memory: 244.305 MB.
